@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <title>New York Times Search</title>
+  <!-- Bootstrap CSS CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+​
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <!--Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="groupProject.css"/>
+​
+</head>
+​
+<header>
+    <!-- <img src="../Instructions/Images/news.png"> -->
+    <p>New York Times Search</p>
+</header>
+​
+<body>
+  <wrapper>
+​   <p>
+    <i class="fa fa-calendar" >   Search Parameters</i>
+</p>
+​
+    <!--Taken from https://mdbootstrap.com/docs/b4/jquery/forms/search/-->
+    <!-- Search form -->
+    <section>Search Term
+    <input class="form-control searchTerm" type="text" placeholder="Search" aria-label="Search">
+    </section>
+​
+    <br></br>
+​
+    <!-- Search form -->
+    <section>Number of Records to Retrieve
+        <select class="form-control" name="num" id="num">
+            <option value="1">1</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+    </section>
+​
+    <br></br>
+​
+    <!-- Search form -->
+    <section>Start Year (Optional)
+        <input class="form-control yearStart" type="text" placeholder="Search" aria-label="Search">
+    </section>
+    ​
+    <br></br>
+​
+    <!-- Search form -->
+    <section>End Year (Optional):
+        <input class="form-control yearEnd" type="text" placeholder="Search" aria-label="Search">
+    </section>
+    ​
+    ​<br></br>
+    <button id="run-search" type="submit" ><a class="fa fa-search">Search</a></button>
+    <button id="clear-all" type="submit" ><a class="fa fa-trash">Clear Results</a></button>
+​    <br></br>
+​
+  </wrapper>
+​
+  <wrapper>
+    <i class="fa fa-calendar">Top Articles</i>
+  </wrapper>
+​
+  <results class="listarticles">
+​
+  </results>
+​
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<!-- Code to the JavaScript File -->
+<script src="nytCode.js"></script>
+​
+</body>
+​
+​
+<footer>
+  <h5>Made with lots and lots of ❤️️</h5>
+  <p>
+      &copy; 2020 Team 8, UNC Coding Bootcamp.
+  </p>
+</footer>
+</html>
